@@ -7,3 +7,23 @@ function moveZeros(){
 
 }
 console.log(moveZeros())
+
+
+function reverseWord(){
+   const word = "Hello  World";
+   const chars = word.split('');
+   const swappedChars = chars.map(char=>{
+    if(char === char.toLowerCase()){
+        return char.toUpperCase()
+    }else{
+        return char.toLowerCase()
+    }
+   })
+   console.log(swappedChars);
+  let result = swappedChars.join(' ');
+  
+  console.log(result)
+
+}
+  
+reverseWord()
